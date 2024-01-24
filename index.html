@@ -4,23 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header center">
       <div class="top">
         <h1 class="top__title">Добро пожаловать на мой сайт !</h1>
         <p class="top__text">
           Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
-          поехали и приступай
+          <span class="top__text-fat">поехали</span> и
+          <span class="top__text-fat">приступай</span>
         </p>
         <button class="top__button">Поехали!</button>
       </div>
     </header>
-    <main class="box">
+    <main class="box center">
       <nav class="box-nav">
-        <a href="#"><img src="" alt="Игра 1" /></a>
-        <a href="#"><img src="" alt="Игра 2" /></a>
-        <a href="#"><img src="" alt="Игра 3" /></a>
+        <div class="nav__content">
+          <a href="#">
+            <img class="nav__img" src="img/man.jpg" alt="Игра 1" />
+            <p class="nav__text">Игра 1</p>
+          </a>
+        </div>
+        <div class="nav__content">
+          <a href="#">
+            <img class="nav__img" src="img/mAn (2).jpg" alt="Игра 2" />
+            <p class="nav__text">Игра 2</p>
+          </a>
+        </div>
+        <div class="nav__content">
+          <a href="#">
+            <img class="nav__img" src="img/girl.jpg" alt="Игра 3" />
+            <p class="nav__text">Игра 3</p>
+          </a>
+        </div>
       </nav>
     </main>
   </body>
