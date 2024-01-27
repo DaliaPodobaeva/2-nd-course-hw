@@ -31,7 +31,7 @@ img {
   padding-right: calc(50% - 600px);
 }
 .header {
-  background-image: url(img/bg.jpg);
+  background-image: url(img/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,7 +54,7 @@ img {
   max-width: 481px;
   margin-top: 32px;
 }
-.top__text-fat {
+.top__text-bold {
   font-weight: 700;
 }
 .top__button {
