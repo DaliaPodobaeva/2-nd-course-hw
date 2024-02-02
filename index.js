@@ -47,7 +47,7 @@ const user = {
     isAdmin: true
 }
 // Задание 9.1
-user['city of residence'] = true;
+user['city of residence'] = Moscow;
 // Задание 9.2
 user.age = 8;
 // Задание 9.3
