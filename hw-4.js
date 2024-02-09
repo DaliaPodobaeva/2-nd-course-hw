@@ -28,9 +28,14 @@ for (let salary in obj) {
   alert(`${salary} - зарплата ${obj[salary]} долларов`);
 }
 // 5
-for (n = 1000, i = 0; n > 50; n /= 2, i++);
-alert(n);
-let num = 5;
+n = 1000
+i = 0
+while (n > 50){
+  n /= 2;
+  console.log (n);
+  i++;
+  let num = 5;
+}
 // 6
 let friday = 4;
 for (let day = friday; day <= 31; day += 7) {
