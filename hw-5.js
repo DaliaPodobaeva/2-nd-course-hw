@@ -31,11 +31,11 @@ console.log(square2(7));
 // Задание4
 let checkAge = (age) => {
   if (age < 0) {
-    alert("Вы ввели неправильное значение");
+    console.log("Вы ввели неправильное значение");
   } else if (age <= 12) {
-    alert("Привет, друг!");
+    console.log("Привет, друг!");
   } else {
-    alert("Добро пожаловать!");
+    console.log("Добро пожаловать!");
   }
 };
 checkAge(prompt("Введите ваш возраст"));
@@ -53,37 +53,50 @@ console.log(number(n, m));
 // Задание6
 let userNumber = prompt("Введите число");
 function checkNumber(userNumber) {
-  if (isNaN(userNumber)) {
+  if (userNumber >= 0 && userNumber <= 10) {
+    return `${userNumber} в кубе равняется ${userNumber ** 3}`;
+  } else if (userNumber > 10) {
+    return "Вы ввели слишком большое число";
+  } else {
     return "Переданный параметр не является числом";
-  } else if ( n <= 0 && n <= 10) {
-    return `${userNumber} в кубе равняется ${userNumber ** 3}`;
-  }
-   else {
-    return `${userNumber} в кубе равняется ${userNumber ** 3}`;
   }
 }
-console.log(checkNumber(userNumber))
+console.log(checkNumber(userNumber));
 // Задание7
 function getRectangleArea() {
-    return Math.PI * this.radius;
+  return this.radius * 3.14;
 }
 function getRectanglePerimeter() {
-    return 2*Math.PI*this.radius;
+  return this.radius * 2 * 3.14;
 }
-let circle1 = {
-    radius: 9,
+const circle1 = {
+  radius: 9,
 
-    getArea: getRectangleArea,
-    getPerimeter: getRectangleArea,
+  getArea: getRectangleArea,
+  getPerimeter: getRectangleArea,
 };
-let circle2 = {
-    radius: 6,
+const circle2 = {
+  radius: 6,
 
-    getArea: getRectangleArea,
-    getPerimeter: getRectangleArea,
+  getArea: getRectangleArea,
+  getPerimeter: getRectangleArea,
 };
 console.log(circle1.getArea());
 console.log(circle1.getPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.getPerimeter());
 // Задание 8
+function season() {
+let month = prompt('Введите номер месяца');
+  if (month >= 1 && month <= 2 || month ===12 ) {
+    console.log ('Зима');
+  } else if (month >= 3 && month <= 5) {
+    console.log ('Весна');
+  } else if (month >= 6 && month <= 8) {
+    console.log ('Лето');
+} else if (month >= 9 && month <= 11) {
+  console.log ('Осень');
+} else {
+  console.log ('Ты ввел что-то не то, попробуй еще раз')
+}
+}
