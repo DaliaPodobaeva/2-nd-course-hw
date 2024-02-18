@@ -10,7 +10,7 @@ console.log(puzzle(2, 9));
 console.log(puzzle(6, 1));
 // Задание2
 let parity = (c) => {
-  if (c % 2 == 0) {
+  if (c % 2 === 0) {
     return "Число чётное";
   } else {
     return "Число нечётное";
@@ -30,7 +30,8 @@ let square2 = (b) => {
 console.log(square2(7));
 // Задание4
 let checkAge = (age) => {
-  if (age < 0) {
+  age = Number(age);
+  if (age < 0 || isNaN(age)) {
     console.log("Вы ввели неправильное значение");
   } else if (age <= 12) {
     console.log("Привет, друг!");
@@ -53,6 +54,7 @@ console.log(number(n, m));
 // Задание6
 let userNumber = prompt("Введите число");
 function checkNumber(userNumber) {
+  userNumber = Number(userNumber);
   if (userNumber >= 0 && userNumber <= 10) {
     return `${userNumber} в кубе равняется ${userNumber ** 3}`;
   } else if (userNumber > 10) {
@@ -63,28 +65,26 @@ function checkNumber(userNumber) {
 }
 console.log(checkNumber(userNumber));
 // Задание7
-function getRectangleArea() {
-  return this.radius * 3.14;
+function getCircleArea() {
+  return Math.PI * this.radius ** 2;
 }
-function getRectanglePerimeter() {
-  return this.radius * 2 * 3.14;
+function getCirclePerimeter() {
+  return 2 * Math.PI * this.radius;
 }
 const circle1 = {
-  radius: 9,
-
-  getArea: getRectangleArea,
-  getPerimeter: getRectangleArea,
+  radius: 6,
+  getArea: getCircleArea,
+  getPerimetr: getCirclePerimeter,
 };
 const circle2 = {
-  radius: 6,
-
-  getArea: getRectangleArea,
-  getPerimeter: getRectangleArea,
+  radius: 9,
+  getArea: getCircleArea,
+  getPerimetr: getCirclePerimeter,
 };
 console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
+console.log(circle1.getPerimetr());
 console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+console.log(circle2.getPerimetr());
 // Задание 8
 function season() {
 let month = prompt('Введите номер месяца');
