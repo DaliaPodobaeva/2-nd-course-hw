@@ -75,6 +75,7 @@ img {
 .box {
   background: #000915;
   min-height: 556px;
+  padding-top: 128px;
 }
 .box-nav {
   display: flex;
@@ -147,12 +148,24 @@ img {
   width: 485px;
   height: 333px;
 }
+.second__game {
+  display: flex;
+  justify-content: center;
+  margin-top: 410px;
+  gap: 135px;
+}
+.second__game-mobile {
+  display: none;
+}
 
 /* стили для мобилки */
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    height: 735px;
   }
   .top {
     display: flex;
@@ -178,11 +191,12 @@ img {
   }
   .first__game {
     flex-wrap: wrap;
+    margin-top: 51px;
   }
   .game__box {
     align-items: center;
   }
-  .game__title{
+  .game__title {
     text-align: center;
     font-size: 32px;
   }
@@ -194,5 +208,15 @@ img {
   .game__img {
     width: 344px;
     height: 236px;
+  }
+  .second__game {
+    display: none;
+  }
+  .second__game-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 136px;
+    gap: 135px;
+    flex-wrap: wrap;
   }
 }
