@@ -152,6 +152,7 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 410px;
+  margin-bottom: 242px;
   gap: 135px;
 }
 .second__game-mobile {
@@ -216,6 +217,7 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 136px;
+    margin-bottom: 92px;
     gap: 135px;
     flex-wrap: wrap;
   }

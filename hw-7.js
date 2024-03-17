@@ -3,7 +3,7 @@ let string = "js";
 console.log(string.toUpperCase());
 // Задание 2
 function searchStart(arr, str) {
-  return arr.filter((el) => el.toLowerCase(str).startsWith(str));
+  return arr.filter((el) => el.toLowerCase(str).startsWith(str.toLowerCase()));
 }
 console.log(searchStart(["Кошка", "Кит", "Комар", "Носорог"], "ко"));
 console.log(searchStart(["яблоко", "груша", "гриб", "огурец"], "гру"));
